@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   return (
     <section className="relative pt-20 pb-10 px-6 max-w-7xl mx-auto flex flex-col items-center text-center z-10">
       <div className="bg-white/30 backdrop-blur-sm p-8 rounded-[4rem] border-4 border-white/50 shadow-2xl">
-        <h1 className="text-5xl md:text-7xl font-bold text-pink-600 mb-6 leading-tight drop-shadow-sm">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-pink-600 mb-6 leading-tight drop-shadow-sm">
           Welcome to Our <br />
           <span className="text-yellow-500">Happy Learning</span> World!
         </h1>
@@ -29,15 +29,15 @@ const Hero: React.FC = () => {
 
       <div className="mt-12 flex justify-center gap-8 md:gap-16">
         <div className="text-center">
-          <div className="text-5xl md:text-6xl animate-bounce">🐘</div>
+          <div className="text-4xl md:text-6xl animate-bounce">🐘</div>
           <p className="font-bold text-gray-700 mt-2">Kindness</p>
         </div>
         <div className="text-center">
-          <div className="text-5xl md:text-6xl animate-bounce" style={{ animationDelay: '0.2s' }}>🦒</div>
+          <div className="text-4xl md:text-6xl animate-bounce" style={{ animationDelay: '0.2s' }}>🦒</div>
           <p className="font-bold text-gray-700 mt-2">Growth</p>
         </div>
         <div className="text-center">
-          <div className="text-5xl md:text-6xl animate-bounce" style={{ animationDelay: '0.4s' }}>🐼</div>
+          <div className="text-4xl md:text-6xl animate-bounce" style={{ animationDelay: '0.4s' }}>🐼</div>
           <p className="font-bold text-gray-700 mt-2">Creativity</p>
         </div>
       </div>

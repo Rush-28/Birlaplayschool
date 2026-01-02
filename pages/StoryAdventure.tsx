@@ -8,7 +8,7 @@ const StoryAdventure: React.FC = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="bg-white rounded-[3rem] p-10 shadow-2xl border-8 border-yellow-200 text-center relative overflow-hidden">
 
-                    <Link to="/" className="absolute top-8 left-8 bg-pink-400 text-white px-6 py-2 rounded-full font-bold shadow-md hover:bg-pink-500 transition-all">
+                    <Link to="/activities" className="absolute top-8 left-8 bg-pink-400 text-white px-6 py-2 rounded-full font-bold shadow-md hover:bg-pink-500 transition-all">
                         ← Back
                     </Link>
 

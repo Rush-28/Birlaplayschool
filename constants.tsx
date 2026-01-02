@@ -38,9 +38,13 @@ export const CURRICULUM: CurriculumItem[] = [
 
 export const ACTIVITIES: Activity[] = [
   { id: 'avatar', title: 'Avatar Maker', image: '/avatar_maker.png', category: 'Creative', link: '/avatar' },
-  { id: '1', title: 'Magic Drawing', image: '/magic_drawing.png', category: 'Creative', link: '/magic-drawing' },
+  { id: '1', title: 'Creative Crafting', image: 'https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&q=80&w=500&h=500', category: 'Creative', link: '/crafting' },
   { id: '2', title: 'Story Adventure', image: '/story_adventure.png', category: 'Reading', link: '/story-adventure' },
   { id: '3', title: 'Dance Party', image: '/dance_party.png', category: 'Physical', link: '/dance-party' },
+  { id: '4', title: 'Little Yogis', image: '/kids_yoga_new.png', category: 'Physical', link: '/yoga' },
+  { id: '5', title: 'Puzzle Master', image: '/puzzle_master.png', category: 'Logic', link: '/puzzles' },
+  { id: '6', title: 'Musical Chairs', image: '/musical_chairs.png', category: 'Fun', link: '/music' },
+  { id: '7', title: 'Shadow Puppets', image: '/shadow_puppets.jpg', category: 'Creative', link: '/shadows' },
 ];
 
 export const GALLERY: GalleryItem[] = [

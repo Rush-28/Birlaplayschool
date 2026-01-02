@@ -12,27 +12,31 @@ import ParentsPage from './pages/ParentsPage';
 import LoginPage from './pages/LoginPage';
 import AvatarCustomizer from './components/AvatarCustomizer';
 import StoryAdventure from './pages/StoryAdventure';
-import MagicDrawing from './pages/MagicDrawing';
+import CraftingPage from './pages/CraftingPage';
 import DanceParty from './pages/DanceParty';
 import ParentPortal from './pages/ParentPortal';
 import TeacherPortal from './pages/TeacherPortal';
 import EnrollPage from './pages/EnrollPage';
+import YogaPage from './pages/YogaPage';
+import PuzzlesPage from './pages/PuzzlesPage';
+import MusicPage from './pages/MusicPage';
+import ShadowPage from './pages/ShadowPage';
 
 // Loading Component
 const LoadingScreen = () => (
   <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-sky-50 overflow-hidden">
-    <div className="flex gap-8 mb-12">
-      <div className="text-7xl md:text-9xl animate-bounce" style={{ animationDuration: '0.8s' }}>🦒</div>
-      <div className="text-7xl md:text-9xl animate-bounce" style={{ animationDuration: '1s', animationDelay: '0.2s' }}>🐘</div>
-      <div className="text-7xl md:text-9xl animate-bounce" style={{ animationDuration: '0.9s', animationDelay: '0.4s' }}>🐼</div>
-      <div className="text-7xl md:text-9xl animate-bounce" style={{ animationDuration: '1.1s', animationDelay: '0.1s' }}>🐰</div>
+    <div className="flex gap-2 sm:gap-4 md:gap-8 mb-6 md:mb-12">
+      <div className="text-4xl sm:text-5xl md:text-9xl animate-bounce" style={{ animationDuration: '0.8s' }}>🦒</div>
+      <div className="text-4xl sm:text-5xl md:text-9xl animate-bounce" style={{ animationDuration: '1s', animationDelay: '0.2s' }}>🐘</div>
+      <div className="text-4xl sm:text-5xl md:text-9xl animate-bounce" style={{ animationDuration: '0.9s', animationDelay: '0.4s' }}>🐼</div>
+      <div className="text-4xl sm:text-5xl md:text-9xl animate-bounce" style={{ animationDuration: '1.1s', animationDelay: '0.1s' }}>🐰</div>
     </div>
-    <div className="relative">
-      <h2 className="text-4xl md:text-6xl font-bubble text-pink-500 animate-pulse text-center">
+    <div className="relative px-4">
+      <h2 className="text-2xl sm:text-3xl md:text-6xl font-bubble text-pink-500 animate-pulse text-center">
         B. K Birla Play School <br />
-        <span className="text-2xl md:text-3xl text-blue-400">is getting ready...</span>
+        <span className="text-lg sm:text-xl md:text-3xl text-blue-400">is getting ready...</span>
       </h2>
-      <div className="mt-8 w-64 h-3 bg-white rounded-full mx-auto overflow-hidden border-2 border-pink-100">
+      <div className="mt-8 w-48 md:w-64 h-2 md:h-3 bg-white rounded-full mx-auto overflow-hidden border-2 border-pink-100">
         <div className="h-full bg-pink-400 animate-[loading_2s_ease-in-out_infinite]" style={{ width: '40%' }}></div>
       </div>
     </div>
@@ -68,7 +72,7 @@ const Footer = () => (
           <span className="text-2xl group-hover:scale-110 transition-transform">📧</span>
           <div className="text-left">
             <p className="text-xs text-blue-400 font-bold uppercase tracking-wider">Email Us</p>
-            <a href="mailto:contact@bkbirlaplayschoolkalyan.com" className="text-gray-700 font-bold text-lg hover:text-blue-600">
+            <a href="mailto:contact@bkbirlaplayschoolkalyan.com" className="text-gray-700 font-bold text-sm sm:text-lg hover:text-blue-600 break-all">
               contact@bkbirlaplayschoolkalyan.com
             </a>
           </div>
@@ -119,8 +123,14 @@ function App() {
             <Route path="/teacher-portal" element={<TeacherPortal />} />
             <Route path="/avatar" element={<AvatarCustomizer />} />
             <Route path="/story-adventure" element={<StoryAdventure />} />
-            <Route path="/magic-drawing" element={<MagicDrawing />} />
+
+
+            <Route path="/crafting" element={<CraftingPage />} />
             <Route path="/dance-party" element={<DanceParty />} />
+            <Route path="/yoga" element={<YogaPage />} />
+            <Route path="/puzzles" element={<PuzzlesPage />} />
+            <Route path="/music" element={<MusicPage />} />
+            <Route path="/shadows" element={<ShadowPage />} />
             <Route path="/enroll" element={<EnrollPage />} />
           </Routes>
         </Suspense>

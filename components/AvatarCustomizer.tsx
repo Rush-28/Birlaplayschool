@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AVATAR_OPTIONS } from '../constants';
 import { AvatarConfig } from '../types';
 
@@ -30,6 +31,11 @@ const AvatarCustomizer: React.FC = () => {
 
   return (
     <div className="pt-32 pb-20 px-6 max-w-4xl mx-auto relative z-10">
+      <Link to="/activities" className="inline-block mb-6 relative z-50">
+        <button className="bg-white hover:bg-pink-50 text-pink-500 font-bold py-2 px-6 rounded-full shadow-md border-2 border-pink-100 transition-all flex items-center gap-2">
+          ⬅ Back to Activities
+        </button>
+      </Link>
       <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl border-8 border-pink-100">
         <h1 className="text-4xl md:text-5xl font-bold text-pink-500 mb-8 text-center font-bubble">
           Create Your Friend! 🎨
@@ -110,8 +116,8 @@ const AvatarCustomizer: React.FC = () => {
                     key={acc.id}
                     onClick={() => updateConfig('accessory', acc.label === '❌' ? '' : acc.label)}
                     className={`text-3xl p-3 rounded-2xl border-4 transition-all ${(config.accessory === acc.label || (config.accessory === '' && acc.label === '❌'))
-                        ? 'border-blue-400 bg-blue-50 scale-110 shadow-md'
-                        : 'border-gray-100 hover:border-blue-200'
+                      ? 'border-blue-400 bg-blue-50 scale-110 shadow-md'
+                      : 'border-gray-100 hover:border-blue-200'
                       }`}
                   >
                     {acc.label}

@@ -4,14 +4,14 @@ import React from 'react';
 const AboutPage: React.FC = () => {
   return (
     <div className="pt-32 pb-20 px-6 max-w-5xl mx-auto relative z-10">
-      <div className="bg-white rounded-[3rem] p-10 md:p-16 shadow-2xl border-8 border-yellow-100 relative overflow-hidden">
+      <div className="bg-white rounded-[3rem] p-5 md:p-16 shadow-2xl border-8 border-yellow-100 relative overflow-hidden">
         {/* Storybook bookmark */}
         <div className="absolute top-0 right-8 md:right-16 w-8 h-12 md:w-10 md:h-14 bg-pink-400 rounded-b-lg shadow-md flex items-end justify-center pb-1.5 transition-all">
           <span className="text-white text-sm md:text-lg">🏷️</span>
         </div>
 
-        <h1 className="flex items-center justify-center gap-3 text-3xl md:text-5xl lg:text-6xl font-bold text-blue-600 mb-10 text-center font-bubble whitespace-nowrap">
-          Once Upon a Learning Adventure... <span className="text-4xl md:text-6xl">📖</span>
+        <h1 className="text-base sm:text-3xl md:text-5xl lg:text-6xl font-bold text-blue-600 mb-6 md:mb-10 text-center font-bubble whitespace-nowrap">
+          Once Upon a Learning Adventure... <span className="text-xl sm:text-4xl md:text-6xl align-middle">📖</span>
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -92,6 +92,66 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
 
+        <div className="mt-12">
+          <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-[2.5rem] p-6 md:p-8 border-2 border-purple-100 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-purple-100 rounded-full opacity-50 -mr-32 -mt-32 blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-indigo-100 rounded-full opacity-50 -ml-24 -mb-24 blur-3xl"></div>
+
+            <div className="text-center mb-8 relative z-10">
+              <span className="inline-block py-1 px-3 rounded-full bg-white border border-purple-100 text-purple-600 font-bold mb-3 shadow-none text-xs">
+                World-Class Facilities 🏰
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 font-bubble">
+                Our Infrastructure
+              </h2>
+              <p className="text-base text-gray-600 max-w-2xl mx-auto leading-snug">
+                Designed to spark curiosity and ensure comfort for every little learner.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative z-10">
+              <div className="flex items-start gap-4 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-purple-100 hover:bg-white transition-colors duration-300">
+                <div className="text-3xl bg-purple-100 p-3 rounded-2xl shrink-0">🛡️</div>
+                <div>
+                  <h3 className="font-bold text-gray-800 text-lg mb-1">Safe & Secure</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">Safe and secure environment designed specifically for tiny tots.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-purple-100 hover:bg-white transition-colors duration-300">
+                <div className="text-3xl bg-blue-100 p-3 rounded-2xl shrink-0">🏫</div>
+                <div>
+                  <h3 className="font-bold text-gray-800 text-lg mb-1">Modern Classrooms</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">Colourful, spacious and well-ventilated classrooms with interactive boards.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-purple-100 hover:bg-white transition-colors duration-300">
+                <div className="text-3xl bg-yellow-100 p-3 rounded-2xl shrink-0">✨</div>
+                <div>
+                  <h3 className="font-bold text-gray-800 text-lg mb-1">Interactive Corridors</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">Corridors designed to be learning spaces that engage children as they move.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-purple-100 hover:bg-white transition-colors duration-300">
+                <div className="text-3xl bg-orange-100 p-3 rounded-2xl shrink-0">🪑</div>
+                <div>
+                  <h3 className="font-bold text-gray-800 text-lg mb-1">Child-Friendly Furniture</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">Ergonomically designed furniture, safe and comfortable for little ones.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-purple-100 hover:bg-white transition-colors duration-300 md:col-span-2">
+                <div className="text-3xl bg-teal-100 p-3 rounded-2xl shrink-0">🧼</div>
+                <div>
+                  <h3 className="font-bold text-gray-800 text-lg mb-1">Hygienic Washrooms</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">Age-appropriate, clean, and hygienic washrooms for healthy habits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-orange-50 p-8 rounded-3xl text-center border-2 border-orange-100 hover:shadow-lg transition-shadow">
             <div className="text-5xl mb-4">🥗</div>
