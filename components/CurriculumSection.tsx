@@ -14,7 +14,7 @@ const CurriculumSection: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-6 font-bubble">The CREATE Learning Framework 🎓</h2>
           <div className="w-24 h-2 bg-pink-300 mx-auto rounded-full mb-8"></div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap justify-center gap-3 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap justify-center gap-3 md:gap-6 max-w-5xl mx-auto">
             {[
               { letter: 'C', word: 'Connectivity', color: 'bg-red-100 text-red-600 border-red-200' },
               { letter: 'R', word: 'Responsibility', color: 'bg-orange-100 text-orange-600 border-orange-200' },

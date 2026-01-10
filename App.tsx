@@ -3,6 +3,7 @@ import React, { Suspense } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import FloatingElements from './components/FloatingElements';
+import VoiceChatbot from './components/VoiceChatbot';
 import Hero from './components/Hero';
 import CurriculumSection from './components/CurriculumSection';
 import ActivitySection from './components/ActivitySection';
@@ -108,6 +109,7 @@ function App() {
       <div className="min-h-screen rainbow-gradient relative overflow-x-hidden">
         {isLoading && <LoadingScreen />}
         <FloatingElements />
+        <VoiceChatbot />
         <Navbar />
 
         <Suspense fallback={<LoadingScreen />}>

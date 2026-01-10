@@ -211,41 +211,93 @@ const ParentsPage: React.FC = () => {
               </div>
             </div>
           </div>
+
+
         </div>
 
-        {/* Admission Inquiry */}
-        <div className="bg-white rounded-[2rem] p-8 shadow-2xl border-4 border-yellow-200 h-fit sticky top-32">
-          <h2 className="text-2xl font-bold text-yellow-600 mb-6 text-center font-bubble">Join the Magic! ✨</h2>
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-            <div>
-              <label className="block text-sm font-bold text-gray-600 mb-1">Parent's Name</label>
-              <input type="text" className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none" placeholder="Enter name" />
-            </div>
-            <div>
-              <label className="block text-sm font-bold text-gray-600 mb-1">Child's Age</label>
-              <select className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none">
-                <option>2 Years</option>
-                <option>3 Years</option>
-                <option>4 Years</option>
-                <option>5-6 Years</option>
-              </select>
-            </div>
-            <div>
-              <label className="block text-sm font-bold text-gray-600 mb-1">Email Address</label>
-              <input type="email" className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none" placeholder="Email here" />
-            </div>
-            <div>
-              <label className="block text-sm font-bold text-gray-600 mb-1">Message</label>
-              <textarea className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none h-24" placeholder="Tell us about your little one!"></textarea>
-            </div>
-            <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-3 rounded-xl shadow-lg transition-transform active:scale-95">
-              Send Inquiry 🚀
-            </button>
-            <button className="w-full mt-3 bg-white border-2 border-yellow-400 text-yellow-600 font-bold py-3 rounded-xl shadow-sm hover:bg-yellow-50 transition-transform active:scale-95 flex items-center justify-center gap-2 group">
-              Check Admission Status
-              <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full group-hover:bg-yellow-200 transition-colors">2025-26</span>
-            </button>
-          </form>
+        <div className="space-y-8">
+          {/* Admission Inquiry */}
+          <div className="bg-white rounded-[2rem] p-8 shadow-2xl border-4 border-yellow-200 h-fit sticky top-32">
+            <h2 className="text-2xl font-bold text-yellow-600 mb-6 text-center font-bubble">Join the Magic! ✨</h2>
+            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <div>
+                <label className="block text-sm font-bold text-gray-600 mb-1">Parent's Name</label>
+                <input type="text" className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none" placeholder="Enter name" />
+              </div>
+              <div>
+                <label className="block text-sm font-bold text-gray-600 mb-1">Child's Age</label>
+                <select className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none">
+                  <option>2 Years</option>
+                  <option>3 Years</option>
+                  <option>4 Years</option>
+                  <option>5-6 Years</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-bold text-gray-600 mb-1">Email Address</label>
+                <input type="email" className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none" placeholder="Email here" />
+              </div>
+              <div>
+                <label className="block text-sm font-bold text-gray-600 mb-1">Message</label>
+                <textarea className="w-full px-4 py-2 rounded-xl bg-yellow-50 border-2 border-yellow-100 focus:border-yellow-300 outline-none h-24" placeholder="Tell us about your little one!"></textarea>
+              </div>
+              <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-3 rounded-xl shadow-lg transition-transform active:scale-95">
+                Send Inquiry 🚀
+              </button>
+              <button className="w-full mt-3 bg-white border-2 border-yellow-400 text-yellow-600 font-bold py-3 rounded-xl shadow-sm hover:bg-yellow-50 transition-transform active:scale-95 flex items-center justify-center gap-2 group">
+                Check Admission Status
+                <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full group-hover:bg-yellow-200 transition-colors">2025-26</span>
+              </button>
+            </form>
+          </div>
+
+          {/* Complaint Dropbox */}
+          <div className="bg-white rounded-[2rem] p-8 shadow-xl border-4 border-red-200">
+            <h2 className="text-2xl font-bold text-red-600 mb-6 flex items-center gap-2 font-bubble">
+              Complaint & Suggestion Box 📬
+            </h2>
+            <p className="text-gray-600 mb-6">We value your feedback! Help us make our school even better for your little ones.</p>
+
+            <form className="space-y-4" onSubmit={(e) => {
+              e.preventDefault();
+              alert("Thank you for your feedback! We have received your message.");
+              (e.target as any).reset();
+            }}>
+              <div className="grid grid-cols-1 gap-4">
+                <div>
+                  <label className="block text-sm font-bold text-gray-600 mb-1">Parent's Name</label>
+                  <input required type="text" className="w-full px-4 py-2 rounded-xl bg-red-50 border-2 border-red-100 focus:border-red-300 outline-none transition-colors" placeholder="Your name" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-600 mb-1">Category</label>
+                  <div className="relative">
+                    <select className="w-full px-4 py-2 rounded-xl bg-red-50 border-2 border-red-100 focus:border-red-300 outline-none transition-colors appearance-none cursor-pointer">
+                      <option>Suggestion 💡</option>
+                      <option>Complaint 😟</option>
+                      <option>Appreciation 💖</option>
+                      <option>Other</option>
+                    </select>
+                    <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-red-400">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-bold text-gray-600 mb-1">Message</label>
+                <textarea required className="w-full px-4 py-2 rounded-xl bg-red-50 border-2 border-red-100 focus:border-red-300 outline-none h-24 transition-colors resize-none" placeholder="Share your thoughts..."></textarea>
+              </div>
+
+              <div className="flex justify-end">
+                <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-6 rounded-xl shadow-md transition-transform active:scale-95 flex items-center gap-2 w-full justify-center">
+                  Submit Feedback 📨
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

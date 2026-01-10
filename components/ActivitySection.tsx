@@ -73,7 +73,7 @@ const ActivitySection: React.FC = () => {
               </h3>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
               {[
                 { title: 'Dramatic Play', icon: '🎭', color: 'bg-red-100', desc: 'Area for pretend plays' },
                 { title: 'Sand Play', icon: '🏖️', color: 'bg-yellow-100', desc: 'Tactile sensory fun' },
